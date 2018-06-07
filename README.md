@@ -5,7 +5,7 @@ A php script to find orphan translation key on angular or ionic project
 
 * The best way is to download the php script on the root of your project (but you can download it anywhere you want)
 
-```bash
+```shell
 $ git clone https://github.com/ReaperSoon/ngx-translate-unused.git
 # Optional
 $ mv ngx-translate-unused/ngx-translate-unused.php .
@@ -16,14 +16,14 @@ $ php ngx-translate-unused.php
 
 * You also can execute it directly with the command above :
 
-```bash
+```shell
 $ curl -s https://raw.githubusercontent.com/ReaperSoon/ngx-translate-unused/master/ngx-translate-unused.php > ngx-translate-unused.php && php ngx-translate-unused.php
 ```
 
 ## Usage
 
 Execute script
-```bash
+```shell
 $ php ngx-translate-unused.php
 
 Please enter your translation directory (default: src/assets/i18n): /Users/foo/Projects/Mobile/ionic/MyApp/app/src/assets/i18n/
@@ -77,7 +77,7 @@ Unused keys in /Users/foo/Projects/Mobile/ionic/MyApp/app/src/assets/i18n//fr.js
 You can ignore keys matching pattern with wildcard.
 Example (in my translate files I use "__TITLE__":"" to define title to my translations grouped by categories):
 
-```bash
+```shell
 $ phpm ngx-translate-unused.php --ignore="__*__"
 
 Please enter your translation directory (default: src/assets/i18n): /Users/foo/Projects/Mobile/ionic/MyApp/app/src/assets/i18n/
